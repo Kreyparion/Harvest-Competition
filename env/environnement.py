@@ -58,7 +58,7 @@ class Env:
     
     def save_solution(self):
         if self.step_num == self.max_step:
-            np.save('perdictions.npy', np.array(self.action_logs))
+            np.save('predictions.npy', np.array(self.action_logs))
         else:
             raise Exception("Saved uncompleted solution.")
 
