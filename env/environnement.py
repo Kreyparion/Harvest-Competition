@@ -147,10 +147,10 @@ class Env:
                     reward = val*2/5
                     score += reward
                     tab_ore[ship_pos[0],ship_pos[1]] = max(10,val-reward)
-                tab_ore = tab_ore *1.01
+                tab_ore = tab_ore *1.015
                 
             elif action == 1:
-                tab_ore = tab_ore *1.01
+                tab_ore = tab_ore *1.015
             
             tab_ore = np.clip(tab_ore,0,500)
             
